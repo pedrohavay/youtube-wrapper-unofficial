@@ -1,3 +1,3 @@
 ### Youtube Wrapper Unofficial
 
-Youtube Wrapper (Unofficial) mady with Python and Selenium.
+Youtube Wrapper (Unofficial) made with Python and Selenium.
