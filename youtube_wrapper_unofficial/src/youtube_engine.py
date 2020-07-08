@@ -1,15 +1,11 @@
 import os
 import json
+from urllib.parse import parse_qs
 
 import requests
 from selenium import webdriver
 
-from urllib.parse import parse_qs
-
 class YoutubeEngine:
-    # Variable Configuration
-    EXECUTABLE_FILENAME="chromedriver"
-
     def __init__(self, headless=False):
         # Create webdrive config
         self.options = webdriver.ChromeOptions()
@@ -22,16 +18,8 @@ class YoutubeEngine:
 
     @property
     def _executable(self):
-        # Get current file path
-        current_path = os.path.dirname(os.path.abspath(__file__))
-
-        # Get executable path
-        executable_path = os.path.abspath(os.path.join(
-            current_path,
-            '..',
-            'bin',
-            self.EXECUTABLE_FILENAME
-        ))
+        # Get executable path from environment
+        executable_path = os.path.realpath(os.getenv("executable_path"))
 
         # Return chromedrive path
         return executable_path
