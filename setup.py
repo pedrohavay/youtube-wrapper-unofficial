@@ -15,7 +15,7 @@ setuptools.setup(
     description="Youtube Wrapper (Unofficial) made with Python and Selenium.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pedrohavay/mongo-tasks",
+    url="https://github.com/pedrohavay/youtube-wrapper-unofficial",
     packages=setuptools.find_packages(),
     install_requires=[
         "selenium==3.141.0",
