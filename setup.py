@@ -19,7 +19,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     install_requires=[
         "selenium==3.141.0",
-        "lxml==4.5.0",
+        "lxml==4.6.2",
         "beautifulsoup4==4.8.2",
         "requests==2.21.0"
     ]
