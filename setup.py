@@ -21,6 +21,6 @@ setuptools.setup(
         "selenium==3.141.0",
         "lxml==4.5.0",
         "beautifulsoup4==4.8.2",
-        "requests==2.21.0"
+        "requests==2.31.0"
     ]
 )
